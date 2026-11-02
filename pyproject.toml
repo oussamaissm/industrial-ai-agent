@@ -1,0 +1,21 @@
+[project]
+name = "industrial-ai-agent-benchmark"
+version = "1.0.0"
+description = "Enterprise-grade AI agent platform for industrial automation"
+requires-python = ">=3.10"
+dependencies = [
+    "langgraph>=0.2.0",
+    "langchain-core>=0.3.0",
+    "langchain-groq>=0.2.0",
+    "mcp>=1.0.0",
+    "pydantic>=2.0.0",
+    "pandas>=2.0.0",
+    "pytest>=8.0.0",
+    "psutil>=5.9.0",
+    "matplotlib>=3.8.0",
+    "streamlit>=1.30.0",
+]
+
+[project.scripts]
+generate-data = "data.generate_factory_data:main"
+run-benchmark = "src.evaluation.runner:main"
