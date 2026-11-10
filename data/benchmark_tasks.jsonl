@@ -1,0 +1,3 @@
+{"id": "T001", "type": "lookup", "complexity": "low", "request": "Which machine is responsible for the largest number of downtime minutes?", "expected_tools": ["get_machine_status"], "ground_truth": {"machine_id": "M001", "downtime": 379}}
+{"id": "T002", "type": "analysis", "complexity": "medium", "request": "Why did production output fall below the daily target for Prod_A?", "expected_tools": ["get_machine_status"], "ground_truth": {"reason": "machine_down", "machine_id": "M003"}}
+{"id": "T003", "type": "scheduling", "complexity": "high", "request": "Calculate the production schedule for tomorrow for order O0010, respecting machine capacity.", "expected_tools": ["get_order_details", "calculate_schedule"], "ground_truth": {"valid": true, "machine_id": "M001"}}

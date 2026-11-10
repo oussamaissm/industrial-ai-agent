@@ -1,0 +1,82 @@
+# Industrial AI Agent: simulator baseline + external Open Factory Demo Factory.
+#
+#   docker compose up --build ui                              # UI, synthetic simulator
+#   docker compose --profile openfactory up --build ui mcp-server-openfactory
+#   docker compose --profile openfactory run --rm benchmark-openfactory
+#   docker compose run --rm benchmark                         # original simulator benchmark
+#
+# The Demo Factory REST API is built straight from its GitHub repo (no clone needed).
+
+x-agent-env: &agent-env
+  GROQ_API_KEY: ${GROQ_API_KEY}
+  FACTORY_BACKEND: ${FACTORY_BACKEND:-simulator}
+  FACTORY_TOOL_TRANSPORT: ${FACTORY_TOOL_TRANSPORT:-direct}
+  OPENFACTORY_BASE_URL: http://openfactory-api:8000
+  MCP_SERVER_URL: http://mcp-server-openfactory:8765/mcp
+
+services:
+  # ---- original services (simulator baseline) -------------------------
+  benchmark:
+    build: .
+    container_name: industrial-ai-benchmark
+    environment:
+      <<: *agent-env
+      FACTORY_BACKEND: simulator
+    volumes:
+      - ./experiments:/app/experiments
+      - ./reports:/app/reports
+      - ./data:/app/data
+
+  ui:
+    build: .
+    container_name: industrial-ai-ui
+    command: streamlit run src/ui/app.py --server.port=8501 --server.address=0.0.0.0
+    ports:
+      - "8501:8501"
+    environment: *agent-env
+    volumes:
+      - ./experiments:/app/experiments
+      - ./data:/app/data
+
+  # ---- external factory + MCP integration (profile: openfactory) ------
+  openfactory-api:
+    profiles: ["openfactory"]
+    build:
+      context: https://github.com/Open-Factory-Initiative/Demo-Factory.git#main
+      dockerfile: services/rest_api/Dockerfile
+    container_name: openfactory-api
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health', timeout=3)"]
+      interval: 5s
+      timeout: 4s
+      retries: 12
+
+  mcp-server-openfactory:
+    profiles: ["openfactory"]
+    build: .
+    container_name: industrial-mcp-openfactory
+    command: python -m src.mcp_server --backend openfactory --transport streamable-http --host 0.0.0.0 --port 8765
+    environment:
+      OPENFACTORY_BASE_URL: http://openfactory-api:8000
+    ports:
+      - "8765:8765"
+    depends_on:
+      openfactory-api:
+        condition: service_healthy
+
+  benchmark-openfactory:
+    profiles: ["openfactory"]
+    build: .
+    container_name: industrial-ai-benchmark-openfactory
+    command: python -m src.evaluation.runner --backend openfactory
+    environment:
+      <<: *agent-env
+      FACTORY_BACKEND: openfactory
+    volumes:
+      - ./experiments:/app/experiments
+      - ./data:/app/data
+    depends_on:
+      openfactory-api:
+        condition: service_healthy

@@ -1,0 +1,886 @@
+{
+ "/health": {
+  "status": "ok",
+  "service": "rest-api"
+ },
+ "/api/v1/assets": [
+  {
+   "asset_id": "BR-101",
+   "name": "Bioreactor 101",
+   "area": "Upstream",
+   "equipment_type": "Single-use stirred tank bioreactor",
+   "description": "Simulated upstream bioreactor with temperature, pH, dissolved oxygen, agitation, batch, recipe, and alarm context.",
+   "tags": [
+    "BR101.TemperaturePV",
+    "BR101.TemperatureSP",
+    "BR101.pHPV",
+    "BR101.pHSP",
+    "BR101.DOPV",
+    "BR101.AgitatorRPM",
+    "BR101.FoamDetected",
+    "BR101.BatchID",
+    "BR101.RecipePhase",
+    "BR101.AlarmActive"
+   ]
+  },
+  {
+   "asset_id": "WFI-201",
+   "name": "WFI Distribution Loop",
+   "area": "Utilities",
+   "equipment_type": "Clean utility loop",
+   "description": "Water-for-injection loop with temperature, conductivity, TOC, pressure, flow, sanitization, and quality status.",
+   "tags": [
+    "WFI201.TemperaturePV",
+    "WFI201.Conductivity",
+    "WFI201.TOC",
+    "WFI201.Pressure",
+    "WFI201.FlowRate",
+    "WFI201.SanitizationActive",
+    "WFI201.QualityStatus"
+   ]
+  },
+  {
+   "asset_id": "CSG-301",
+   "name": "Clean Steam Generator",
+   "area": "Utilities",
+   "equipment_type": "Clean steam generator",
+   "description": "Clean steam generator with pressure, temperature, and alarm telemetry.",
+   "tags": [
+    "CSG301.SteamPressure",
+    "CSG301.SteamTemperature",
+    "CSG301.AlarmActive"
+   ]
+  },
+  {
+   "asset_id": "PW-101",
+   "name": "Purified Water Tank",
+   "area": "Utilities",
+   "equipment_type": "Purified water storage",
+   "description": "Purified water tank with level, temperature, and conductivity.",
+   "tags": [
+    "PW101.Level",
+    "PW101.TemperaturePV",
+    "PW101.Conductivity"
+   ]
+  },
+  {
+   "asset_id": "CR-01",
+   "name": "Grade C Cleanroom",
+   "area": "HVAC",
+   "equipment_type": "Controlled cleanroom environment",
+   "description": "Cleanroom environmental monitoring with temperature, humidity, differential pressure, door, particle, and alarm state.",
+   "tags": [
+    "CR01.TemperaturePV",
+    "CR01.RelativeHumidity",
+    "CR01.DifferentialPressure",
+    "CR01.DoorOpen",
+    "CR01.ParticleCount05um",
+    "CR01.EnvironmentalAlarm"
+   ]
+  },
+  {
+   "asset_id": "FL-401",
+   "name": "Filling and Packaging Line",
+   "area": "Packaging",
+   "equipment_type": "Filling, vision, labeling, and packaging line",
+   "description": "PackML-style line model with throughput, reject count, vision inspection, label verification, lot, and alarm state.",
+   "tags": [
+    "FL401.LineState",
+    "FL401.UnitsPerMinute",
+    "FL401.RejectCount",
+    "FL401.VisionInspectionPassRate",
+    "FL401.LabelVerificationStatus",
+    "FL401.BatchID",
+    "FL401.AlarmActive"
+   ]
+  }
+ ],
+ "/api/v1/simulation/status": {
+  "timestamp": "2026-11-02T11:29:54.829887+00:00",
+  "site": {
+   "site_id": "open-factory-demo-site",
+   "name": "Open Factory Demo Site",
+   "status": "running",
+   "areas": {
+    "Upstream": [
+     "BR-101"
+    ],
+    "Utilities": [
+     "WFI-201",
+     "CSG-301",
+     "PW-101"
+    ],
+    "HVAC": [
+     "CR-01"
+    ],
+    "Packaging": [
+     "FL-401"
+    ]
+   },
+   "disclaimer": "Non-GxP simulation environment only; not intended for regulated production use."
+  },
+  "site_status": "running",
+  "assets": [
+   {
+    "asset_id": "BR-101",
+    "name": "Bioreactor 101",
+    "area": "Upstream",
+    "equipment_type": "Single-use stirred tank bioreactor",
+    "description": "Simulated upstream bioreactor with temperature, pH, dissolved oxygen, agitation, batch, recipe, and alarm context.",
+    "tags": [
+     "BR101.TemperaturePV",
+     "BR101.TemperatureSP",
+     "BR101.pHPV",
+     "BR101.pHSP",
+     "BR101.DOPV",
+     "BR101.AgitatorRPM",
+     "BR101.FoamDetected",
+     "BR101.BatchID",
+     "BR101.RecipePhase",
+     "BR101.AlarmActive"
+    ]
+   },
+   {
+    "asset_id": "WFI-201",
+    "name": "WFI Distribution Loop",
+    "area": "Utilities",
+    "equipment_type": "Clean utility loop",
+    "description": "Water-for-injection loop with temperature, conductivity, TOC, pressure, flow, sanitization, and quality status.",
+    "tags": [
+     "WFI201.TemperaturePV",
+     "WFI201.Conductivity",
+     "WFI201.TOC",
+     "WFI201.Pressure",
+     "WFI201.FlowRate",
+     "WFI201.SanitizationActive",
+     "WFI201.QualityStatus"
+    ]
+   },
+   {
+    "asset_id": "CSG-301",
+    "name": "Clean Steam Generator",
+    "area": "Utilities",
+    "equipment_type": "Clean steam generator",
+    "description": "Clean steam generator with pressure, temperature, and alarm telemetry.",
+    "tags": [
+     "CSG301.SteamPressure",
+     "CSG301.SteamTemperature",
+     "CSG301.AlarmActive"
+    ]
+   },
+   {
+    "asset_id": "PW-101",
+    "name": "Purified Water Tank",
+    "area": "Utilities",
+    "equipment_type": "Purified water storage",
+    "description": "Purified water tank with level, temperature, and conductivity.",
+    "tags": [
+     "PW101.Level",
+     "PW101.TemperaturePV",
+     "PW101.Conductivity"
+    ]
+   },
+   {
+    "asset_id": "CR-01",
+    "name": "Grade C Cleanroom",
+    "area": "HVAC",
+    "equipment_type": "Controlled cleanroom environment",
+    "description": "Cleanroom environmental monitoring with temperature, humidity, differential pressure, door, particle, and alarm state.",
+    "tags": [
+     "CR01.TemperaturePV",
+     "CR01.RelativeHumidity",
+     "CR01.DifferentialPressure",
+     "CR01.DoorOpen",
+     "CR01.ParticleCount05um",
+     "CR01.EnvironmentalAlarm"
+    ]
+   },
+   {
+    "asset_id": "FL-401",
+    "name": "Filling and Packaging Line",
+    "area": "Packaging",
+    "equipment_type": "Filling, vision, labeling, and packaging line",
+    "description": "PackML-style line model with throughput, reject count, vision inspection, label verification, lot, and alarm state.",
+    "tags": [
+     "FL401.LineState",
+     "FL401.UnitsPerMinute",
+     "FL401.RejectCount",
+     "FL401.VisionInspectionPassRate",
+     "FL401.LabelVerificationStatus",
+     "FL401.BatchID",
+     "FL401.AlarmActive"
+    ]
+   }
+  ],
+  "tags": {
+   "BR101.TemperaturePV": {
+    "tag_name": "BR101.TemperaturePV",
+    "asset_id": "BR-101",
+    "value": 37.0,
+    "unit": "degC",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:54.145915Z",
+    "description": "Bioreactor temperature process value"
+   },
+   "BR101.TemperatureSP": {
+    "tag_name": "BR101.TemperatureSP",
+    "asset_id": "BR-101",
+    "value": 36.965,
+    "unit": "degC",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:54.145759Z",
+    "description": "Bioreactor temperature setpoint"
+   },
+   "BR101.pHPV": {
+    "tag_name": "BR101.pHPV",
+    "asset_id": "BR-101",
+    "value": 7.0,
+    "unit": "pH",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:54.145920Z",
+    "description": "Bioreactor pH process value"
+   },
+   "BR101.pHSP": {
+    "tag_name": "BR101.pHSP",
+    "asset_id": "BR-101",
+    "value": 6.976,
+    "unit": "pH",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:54.145773Z",
+    "description": "Bioreactor pH setpoint"
+   },
+   "BR101.DOPV": {
+    "tag_name": "BR101.DOPV",
+    "asset_id": "BR-101",
+    "value": 45.0,
+    "unit": "%",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:54.145924Z",
+    "description": "Bioreactor dissolved oxygen process value"
+   },
+   "BR101.AgitatorRPM": {
+    "tag_name": "BR101.AgitatorRPM",
+    "asset_id": "BR-101",
+    "value": 110.806,
+    "unit": "rpm",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:54.145787Z",
+    "description": "Agitator speed"
+   },
+   "BR101.FoamDetected": {
+    "tag_name": "BR101.FoamDetected",
+    "asset_id": "BR-101",
+    "value": false,
+    "unit": "boolean",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:52.820078Z",
+    "description": "Foam detector state"
+   },
+   "BR101.BatchID": {
+    "tag_name": "BR101.BatchID",
+    "asset_id": "BR-101",
+    "value": "BATCH-OFI-2401",
+    "unit": "string",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:52.820078Z",
+    "description": "Current bioreactor batch ID"
+   },
+   "BR101.RecipePhase": {
+    "tag_name": "BR101.RecipePhase",
+    "asset_id": "BR-101",
+    "value": "Growth",
+    "unit": "string",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:52.820078Z",
+    "description": "Current bioreactor recipe phase"
+   },
+   "BR101.AlarmActive": {
+    "tag_name": "BR101.AlarmActive",
+    "asset_id": "BR-101",
+    "value": false,
+    "unit": "boolean",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:54.145959Z",
+    "description": "Bioreactor alarm active flag"
+   },
+   "WFI201.TemperaturePV": {
+    "tag_name": "WFI201.TemperaturePV",
+    "asset_id": "WFI-201",
+    "value": 77.349,
+    "unit": "degC",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:54.145794Z",
+    "description": "WFI loop temperature"
+   },
+   "WFI201.Conductivity": {
+    "tag_name": "WFI201.Conductivity",
+    "asset_id": "WFI-201",
+    "value": 0.45,
+    "unit": "uS/cm",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:54.145928Z",
+    "description": "WFI conductivity"
+   },
+   "WFI201.TOC": {
+    "tag_name": "WFI201.TOC",
+    "asset_id": "WFI-201",
+    "value": 90.0,
+    "unit": "ppb",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:54.145932Z",
+    "description": "WFI total organic carbon"
+   },
+   "WFI201.Pressure": {
+    "tag_name": "WFI201.Pressure",
+    "asset_id": "WFI-201",
+    "value": 2.688,
+    "unit": "bar",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:54.145824Z",
+    "description": "WFI loop pressure"
+   },
+   "WFI201.FlowRate": {
+    "tag_name": "WFI201.FlowRate",
+    "asset_id": "WFI-201",
+    "value": 128.638,
+    "unit": "L/min",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:54.145830Z",
+    "description": "WFI loop flow rate"
+   },
+   "WFI201.SanitizationActive": {
+    "tag_name": "WFI201.SanitizationActive",
+    "asset_id": "WFI-201",
+    "value": false,
+    "unit": "boolean",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:52.820078Z",
+    "description": "WFI sanitization active"
+   },
+   "WFI201.QualityStatus": {
+    "tag_name": "WFI201.QualityStatus",
+    "asset_id": "WFI-201",
+    "value": "Released",
+    "unit": "string",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:54.145968Z",
+    "description": "WFI quality status"
+   },
+   "CSG301.SteamPressure": {
+    "tag_name": "CSG301.SteamPressure",
+    "asset_id": "CSG-301",
+    "value": 2.942,
+    "unit": "bar",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:54.145836Z",
+    "description": "Clean steam pressure"
+   },
+   "CSG301.SteamTemperature": {
+    "tag_name": "CSG301.SteamTemperature",
+    "asset_id": "CSG-301",
+    "value": 135.229,
+    "unit": "degC",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:54.145841Z",
+    "description": "Clean steam temperature"
+   },
+   "CSG301.AlarmActive": {
+    "tag_name": "CSG301.AlarmActive",
+    "asset_id": "CSG-301",
+    "value": false,
+    "unit": "boolean",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:52.820078Z",
+    "description": "Clean steam generator alarm active"
+   },
+   "PW101.Level": {
+    "tag_name": "PW101.Level",
+    "asset_id": "PW-101",
+    "value": 66.789,
+    "unit": "%",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:54.145846Z",
+    "description": "Purified water tank level"
+   },
+   "PW101.TemperaturePV": {
+    "tag_name": "PW101.TemperaturePV",
+    "asset_id": "PW-101",
+    "value": 21.044,
+    "unit": "degC",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:54.145851Z",
+    "description": "Purified water tank temperature"
+   },
+   "PW101.Conductivity": {
+    "tag_name": "PW101.Conductivity",
+    "asset_id": "PW-101",
+    "value": 0.68,
+    "unit": "uS/cm",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:54.145856Z",
+    "description": "Purified water conductivity"
+   },
+   "CR01.TemperaturePV": {
+    "tag_name": "CR01.TemperaturePV",
+    "asset_id": "CR-01",
+    "value": 20.14,
+    "unit": "degC",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:54.145861Z",
+    "description": "Cleanroom temperature"
+   },
+   "CR01.RelativeHumidity": {
+    "tag_name": "CR01.RelativeHumidity",
+    "asset_id": "CR-01",
+    "value": 45.0,
+    "unit": "%",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:54.145942Z",
+    "description": "Cleanroom relative humidity"
+   },
+   "CR01.DifferentialPressure": {
+    "tag_name": "CR01.DifferentialPressure",
+    "asset_id": "CR-01",
+    "value": 15.0,
+    "unit": "Pa",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:54.145937Z",
+    "description": "Cleanroom differential pressure"
+   },
+   "CR01.DoorOpen": {
+    "tag_name": "CR01.DoorOpen",
+    "asset_id": "CR-01",
+    "value": false,
+    "unit": "boolean",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:52.820078Z",
+    "description": "Cleanroom door open state"
+   },
+   "CR01.ParticleCount05um": {
+    "tag_name": "CR01.ParticleCount05um",
+    "asset_id": "CR-01",
+    "value": 6592.709,
+    "unit": "count/m3",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:54.145880Z",
+    "description": "0.5 micron particle count"
+   },
+   "CR01.EnvironmentalAlarm": {
+    "tag_name": "CR01.EnvironmentalAlarm",
+    "asset_id": "CR-01",
+    "value": false,
+    "unit": "boolean",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:54.145965Z",
+    "description": "Cleanroom environmental alarm"
+   },
+   "FL401.LineState": {
+    "tag_name": "FL401.LineState",
+    "asset_id": "FL-401",
+    "value": "Execute",
+    "unit": "string",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:52.820078Z",
+    "description": "Packaging line state"
+   },
+   "FL401.UnitsPerMinute": {
+    "tag_name": "FL401.UnitsPerMinute",
+    "asset_id": "FL-401",
+    "value": 107.961,
+    "unit": "units/min",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:54.145885Z",
+    "description": "Line throughput"
+   },
+   "FL401.RejectCount": {
+    "tag_name": "FL401.RejectCount",
+    "asset_id": "FL-401",
+    "value": 3,
+    "unit": "count",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:54.145946Z",
+    "description": "Reject count"
+   },
+   "FL401.VisionInspectionPassRate": {
+    "tag_name": "FL401.VisionInspectionPassRate",
+    "asset_id": "FL-401",
+    "value": 99.4,
+    "unit": "%",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:54.145952Z",
+    "description": "Vision inspection pass rate"
+   },
+   "FL401.LabelVerificationStatus": {
+    "tag_name": "FL401.LabelVerificationStatus",
+    "asset_id": "FL-401",
+    "value": "Passed",
+    "unit": "string",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:52.820078Z",
+    "description": "Label verification status"
+   },
+   "FL401.BatchID": {
+    "tag_name": "FL401.BatchID",
+    "asset_id": "FL-401",
+    "value": "LOT-FL-401-2401",
+    "unit": "string",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:52.820078Z",
+    "description": "Current filling line lot"
+   },
+   "FL401.AlarmActive": {
+    "tag_name": "FL401.AlarmActive",
+    "asset_id": "FL-401",
+    "value": false,
+    "unit": "boolean",
+    "quality": "Good",
+    "timestamp": "2026-11-02T11:29:54.145971Z",
+    "description": "Filling line alarm active flag"
+   }
+  },
+  "alarms": [],
+  "deviations": [],
+  "batches": [
+   {
+    "batch_id": "BATCH-OFI-2401",
+    "asset_id": "BR-101",
+    "lot_number": "LOT-BR-101-2401",
+    "recipe_phase": "Complete",
+    "state": "running",
+    "started_at": "2026-11-02T11:25:37.245676Z"
+   },
+   {
+    "batch_id": "LOT-FL-401-2401",
+    "asset_id": "FL-401",
+    "lot_number": "LOT-FL-401-2401",
+    "recipe_phase": "Packaging",
+    "state": "running",
+    "started_at": "2026-11-02T11:25:37.245683Z"
+   }
+  ],
+  "current_batch": {
+   "batch_id": "BATCH-OFI-2401",
+   "asset_id": "BR-101",
+   "lot_number": "LOT-BR-101-2401",
+   "recipe_phase": "Complete",
+   "state": "running",
+   "started_at": "2026-11-02T11:25:37.245676Z"
+  },
+  "drifts": [
+   {
+    "drift_id": "BR101_TEMPERATURE_DRIFT",
+    "display_name": "BR-101 Temperature Drift",
+    "description": "Temperature slowly rises from normal operating range toward high alarm.",
+    "asset_id": "BR-101",
+    "affected_tags": [
+     "BR101.TemperaturePV"
+    ],
+    "enabled": false,
+    "started_at": null,
+    "stopped_at": "2026-11-02T11:29:52.820416Z",
+    "severity": "warning",
+    "current_status": "disabled",
+    "normal_range": "36.5-37.5 degC",
+    "warning_range": ">=38.0 degC",
+    "alarm_range": ">=39.0 degC",
+    "current_value": 37.0,
+    "target_value": 39.0,
+    "rate_of_change": 0.08,
+    "protocol_exposure": [
+     "REST",
+     "WebSocket",
+     "OPC-UA",
+     "MQTT"
+    ]
+   },
+   {
+    "drift_id": "BR101_PH_DRIFT",
+    "display_name": "BR-101 pH Drift",
+    "description": "pH slowly drops below acceptable range.",
+    "asset_id": "BR-101",
+    "affected_tags": [
+     "BR101.pHPV"
+    ],
+    "enabled": false,
+    "started_at": null,
+    "stopped_at": "2026-11-02T11:29:52.820424Z",
+    "severity": "warning",
+    "current_status": "disabled",
+    "normal_range": "6.8-7.2 pH",
+    "warning_range": "<=6.7 pH",
+    "alarm_range": "<=6.5 pH",
+    "current_value": 7.0,
+    "target_value": 6.5,
+    "rate_of_change": 0.025,
+    "protocol_exposure": [
+     "REST",
+     "WebSocket",
+     "OPC-UA",
+     "MQTT"
+    ]
+   },
+   {
+    "drift_id": "BR101_DO_DRIFT",
+    "display_name": "BR-101 Dissolved Oxygen Drift",
+    "description": "Dissolved oxygen slowly drops toward low alarm.",
+    "asset_id": "BR-101",
+    "affected_tags": [
+     "BR101.DOPV"
+    ],
+    "enabled": false,
+    "started_at": null,
+    "stopped_at": "2026-11-02T11:29:52.820426Z",
+    "severity": "warning",
+    "current_status": "disabled",
+    "normal_range": "35-60 %",
+    "warning_range": "<=30 %",
+    "alarm_range": "<=25 %",
+    "current_value": 45.0,
+    "target_value": 25.0,
+    "rate_of_change": 0.9,
+    "protocol_exposure": [
+     "REST",
+     "WebSocket",
+     "OPC-UA",
+     "MQTT"
+    ]
+   },
+   {
+    "drift_id": "WFI201_CONDUCTIVITY_DRIFT",
+    "display_name": "WFI-201 Conductivity Drift",
+    "description": "Conductivity slowly increases toward warning and bad quality range.",
+    "asset_id": "WFI-201",
+    "affected_tags": [
+     "WFI201.Conductivity"
+    ],
+    "enabled": false,
+    "started_at": null,
+    "stopped_at": "2026-11-02T11:29:52.820428Z",
+    "severity": "warning",
+    "current_status": "disabled",
+    "normal_range": "0.2-0.8 uS/cm",
+    "warning_range": ">=1.0 uS/cm",
+    "alarm_range": ">=1.3 uS/cm",
+    "current_value": 0.45,
+    "target_value": 1.35,
+    "rate_of_change": 0.035,
+    "protocol_exposure": [
+     "REST",
+     "WebSocket",
+     "OPC-UA",
+     "MQTT",
+     "BACnet"
+    ]
+   },
+   {
+    "drift_id": "WFI201_TOC_DRIFT",
+    "display_name": "WFI-201 TOC Drift",
+    "description": "TOC slowly increases toward warning and bad quality range.",
+    "asset_id": "WFI-201",
+    "affected_tags": [
+     "WFI201.TOC"
+    ],
+    "enabled": false,
+    "started_at": null,
+    "stopped_at": "2026-11-02T11:29:52.820430Z",
+    "severity": "warning",
+    "current_status": "disabled",
+    "normal_range": "20-250 ppb",
+    "warning_range": ">=400 ppb",
+    "alarm_range": ">=500 ppb",
+    "current_value": 90.0,
+    "target_value": 510.0,
+    "rate_of_change": 18.0,
+    "protocol_exposure": [
+     "REST",
+     "WebSocket",
+     "OPC-UA",
+     "MQTT",
+     "BACnet"
+    ]
+   },
+   {
+    "drift_id": "CR01_DIFFERENTIAL_PRESSURE_DRIFT",
+    "display_name": "CR-01 Differential Pressure Drift",
+    "description": "Cleanroom pressure slowly drops below the cleanroom limit.",
+    "asset_id": "CR-01",
+    "affected_tags": [
+     "CR01.DifferentialPressure"
+    ],
+    "enabled": false,
+    "started_at": null,
+    "stopped_at": "2026-11-02T11:29:52.820431Z",
+    "severity": "critical",
+    "current_status": "disabled",
+    "normal_range": "12-18 Pa",
+    "warning_range": "<=10 Pa",
+    "alarm_range": "<=7 Pa",
+    "current_value": 15.0,
+    "target_value": 6.5,
+    "rate_of_change": 0.45,
+    "protocol_exposure": [
+     "REST",
+     "WebSocket",
+     "OPC-UA",
+     "MQTT",
+     "BACnet"
+    ]
+   },
+   {
+    "drift_id": "CR01_HUMIDITY_DRIFT",
+    "display_name": "CR-01 Humidity Drift",
+    "description": "Cleanroom humidity slowly rises above environmental range.",
+    "asset_id": "CR-01",
+    "affected_tags": [
+     "CR01.RelativeHumidity"
+    ],
+    "enabled": false,
+    "started_at": null,
+    "stopped_at": "2026-11-02T11:29:52.820433Z",
+    "severity": "warning",
+    "current_status": "disabled",
+    "normal_range": "35-55 %",
+    "warning_range": ">=60 %",
+    "alarm_range": ">=65 %",
+    "current_value": 45.0,
+    "target_value": 66.0,
+    "rate_of_change": 1.0,
+    "protocol_exposure": [
+     "REST",
+     "WebSocket",
+     "OPC-UA",
+     "MQTT",
+     "BACnet"
+    ]
+   },
+   {
+    "drift_id": "FL401_REJECT_RATE_DRIFT",
+    "display_name": "FL-401 Reject Rate Drift",
+    "description": "Reject count increases while inspection pass rate decreases.",
+    "asset_id": "FL-401",
+    "affected_tags": [
+     "FL401.RejectCount",
+     "FL401.VisionInspectionPassRate"
+    ],
+    "enabled": false,
+    "started_at": null,
+    "stopped_at": "2026-11-02T11:29:52.820435Z",
+    "severity": "warning",
+    "current_status": "disabled",
+    "normal_range": "Rejects <12, pass rate >=98%",
+    "warning_range": "Rejects >=12 or pass rate <=97%",
+    "alarm_range": "Rejects >=24 or pass rate <=95%",
+    "current_value": 3,
+    "target_value": 24.0,
+    "rate_of_change": 1.0,
+    "protocol_exposure": [
+     "REST",
+     "WebSocket",
+     "OPC-UA",
+     "MQTT"
+    ]
+   }
+  ],
+  "recent_events": [
+   {
+    "event_id": "evt-884d4486ee",
+    "event_type": "simulation",
+    "asset_id": null,
+    "severity": "info",
+    "message": "Simulation reset.",
+    "timestamp": "2026-11-02T11:29:52.820494Z",
+    "metadata": {}
+   },
+   {
+    "event_id": "evt-570b0b35a9",
+    "event_type": "batch",
+    "asset_id": "BR-101",
+    "severity": "info",
+    "message": "BR-101 recipe phase changed to Complete.",
+    "timestamp": "2026-11-02T11:29:22.044459Z",
+    "metadata": {}
+   },
+   {
+    "event_id": "evt-abf008c6da",
+    "event_type": "batch",
+    "asset_id": "BR-101",
+    "severity": "info",
+    "message": "BR-101 recipe phase changed to Complete.",
+    "timestamp": "2026-11-02T11:28:36.875095Z",
+    "metadata": {}
+   },
+   {
+    "event_id": "evt-4a03d04d84",
+    "event_type": "batch",
+    "asset_id": "BR-101",
+    "severity": "info",
+    "message": "BR-101 recipe phase changed to Transfer.",
+    "timestamp": "2026-11-02T11:27:51.729267Z",
+    "metadata": {}
+   },
+   {
+    "event_id": "evt-a5cccae371",
+    "event_type": "batch",
+    "asset_id": "BR-101",
+    "severity": "info",
+    "message": "BR-101 recipe phase changed to Hold.",
+    "timestamp": "2026-11-02T11:27:06.590754Z",
+    "metadata": {}
+   },
+   {
+    "event_id": "evt-a0d5c193da",
+    "event_type": "batch",
+    "asset_id": "BR-101",
+    "severity": "info",
+    "message": "BR-101 recipe phase changed to Feed.",
+    "timestamp": "2026-11-02T11:26:21.461419Z",
+    "metadata": {}
+   },
+   {
+    "event_id": "evt-e3ae00d44b",
+    "event_type": "simulation",
+    "asset_id": null,
+    "severity": "info",
+    "message": "Simulation initialized.",
+    "timestamp": "2026-11-02T11:25:37.246183Z",
+    "metadata": {}
+   }
+  ],
+  "protocol_status": {
+   "rest_api": {
+    "status": "healthy",
+    "base_url": "http://localhost:8000",
+    "last_update": "2026-11-02T11:29:54.829899+00:00"
+   },
+   "opcua_server": {
+    "status": "polling",
+    "endpoint": "opc.tcp://localhost:4840/freeopcua/server/",
+    "namespace": "OpenFactoryDemoSite",
+    "last_update": "2026-11-02T11:29:54.829899+00:00",
+    "exposed_nodes": 68
+   },
+   "mqtt_broker": {
+    "status": "healthy",
+    "endpoint": "localhost:1883",
+    "topic_root": "spBv1.0/OpenFactory/#"
+   },
+   "sparkplug_edge_node": {
+    "status": "publishing",
+    "edge_node": "DemoEdgeNode",
+    "last_update": "2026-11-02T11:29:54.829899+00:00",
+    "published_metrics": 36
+   },
+   "bacnet_server": {
+    "status": "polling",
+    "device_name": "OFI-DEMO-BMS-001",
+    "udp_port": 47808,
+    "last_update": "2026-11-02T11:29:54.829899+00:00",
+    "exposed_objects": 10
+   }
+  },
+  "active_alarm_count": 0,
+  "active_deviation_count": 0,
+  "active_drift_count": 0
+ },
+ "/api/v1/alarms": []
+}

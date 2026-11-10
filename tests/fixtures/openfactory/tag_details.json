@@ -1,0 +1,1740 @@
+{
+ "BR101.TemperaturePV": {
+  "value": {
+   "tag_name": "BR101.TemperaturePV",
+   "asset_id": "BR-101",
+   "value": 37.0,
+   "unit": "degC",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:30:06.181426Z",
+   "description": "Bioreactor temperature process value"
+  },
+  "definition": {
+   "tag_name": "BR101.TemperaturePV",
+   "asset_id": "BR-101",
+   "description": "Bioreactor temperature process value",
+   "unit": "degC",
+   "data_type": "float",
+   "normal_min": 36.5,
+   "normal_max": 37.5,
+   "normal_value": 37.0,
+   "warning_low": null,
+   "warning_high": 38.0,
+   "alarm_low": null,
+   "alarm_high": 39.0,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT"
+   ]
+  },
+  "mapping": {
+   "tag_name": "BR101.TemperaturePV",
+   "asset_id": "BR-101",
+   "rest_endpoint": "/api/v1/tags/BR101.TemperaturePV",
+   "websocket_path_or_payload_key": "tags.BR101.TemperaturePV",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/BR-101/BR101/TemperaturePV",
+   "mqtt_metric_name": "BR101/TemperaturePV",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/BR-101",
+   "bacnet_object_name": null,
+   "bacnet_object_type": null,
+   "bacnet_instance": null,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": false
+  }
+ },
+ "BR101.TemperatureSP": {
+  "value": {
+   "tag_name": "BR101.TemperatureSP",
+   "asset_id": "BR-101",
+   "value": 37.009,
+   "unit": "degC",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:30:06.181278Z",
+   "description": "Bioreactor temperature setpoint"
+  },
+  "definition": {
+   "tag_name": "BR101.TemperatureSP",
+   "asset_id": "BR-101",
+   "description": "Bioreactor temperature setpoint",
+   "unit": "degC",
+   "data_type": "float",
+   "normal_min": null,
+   "normal_max": null,
+   "normal_value": 37.0,
+   "warning_low": null,
+   "warning_high": null,
+   "alarm_low": null,
+   "alarm_high": null,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT"
+   ]
+  },
+  "mapping": {
+   "tag_name": "BR101.TemperatureSP",
+   "asset_id": "BR-101",
+   "rest_endpoint": "/api/v1/tags/BR101.TemperatureSP",
+   "websocket_path_or_payload_key": "tags.BR101.TemperatureSP",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/BR-101/BR101/TemperatureSP",
+   "mqtt_metric_name": "BR101/TemperatureSP",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/BR-101",
+   "bacnet_object_name": null,
+   "bacnet_object_type": null,
+   "bacnet_instance": null,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": false
+  }
+ },
+ "BR101.pHPV": {
+  "value": {
+   "tag_name": "BR101.pHPV",
+   "asset_id": "BR-101",
+   "value": 7.0,
+   "unit": "pH",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:30:06.181430Z",
+   "description": "Bioreactor pH process value"
+  },
+  "definition": {
+   "tag_name": "BR101.pHPV",
+   "asset_id": "BR-101",
+   "description": "Bioreactor pH process value",
+   "unit": "pH",
+   "data_type": "float",
+   "normal_min": 6.8,
+   "normal_max": 7.2,
+   "normal_value": 7.0,
+   "warning_low": 6.7,
+   "warning_high": null,
+   "alarm_low": 6.5,
+   "alarm_high": null,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT"
+   ]
+  },
+  "mapping": {
+   "tag_name": "BR101.pHPV",
+   "asset_id": "BR-101",
+   "rest_endpoint": "/api/v1/tags/BR101.pHPV",
+   "websocket_path_or_payload_key": "tags.BR101.pHPV",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/BR-101/BR101/pHPV",
+   "mqtt_metric_name": "BR101/pHPV",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/BR-101",
+   "bacnet_object_name": null,
+   "bacnet_object_type": null,
+   "bacnet_instance": null,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": false
+  }
+ },
+ "BR101.pHSP": {
+  "value": {
+   "tag_name": "BR101.pHSP",
+   "asset_id": "BR-101",
+   "value": 7.004,
+   "unit": "pH",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:30:06.181293Z",
+   "description": "Bioreactor pH setpoint"
+  },
+  "definition": {
+   "tag_name": "BR101.pHSP",
+   "asset_id": "BR-101",
+   "description": "Bioreactor pH setpoint",
+   "unit": "pH",
+   "data_type": "float",
+   "normal_min": null,
+   "normal_max": null,
+   "normal_value": 7.0,
+   "warning_low": null,
+   "warning_high": null,
+   "alarm_low": null,
+   "alarm_high": null,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT"
+   ]
+  },
+  "mapping": {
+   "tag_name": "BR101.pHSP",
+   "asset_id": "BR-101",
+   "rest_endpoint": "/api/v1/tags/BR101.pHSP",
+   "websocket_path_or_payload_key": "tags.BR101.pHSP",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/BR-101/BR101/pHSP",
+   "mqtt_metric_name": "BR101/pHSP",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/BR-101",
+   "bacnet_object_name": null,
+   "bacnet_object_type": null,
+   "bacnet_instance": null,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": false
+  }
+ },
+ "BR101.DOPV": {
+  "value": {
+   "tag_name": "BR101.DOPV",
+   "asset_id": "BR-101",
+   "value": 45.0,
+   "unit": "%",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:30:06.181434Z",
+   "description": "Bioreactor dissolved oxygen process value"
+  },
+  "definition": {
+   "tag_name": "BR101.DOPV",
+   "asset_id": "BR-101",
+   "description": "Bioreactor dissolved oxygen process value",
+   "unit": "%",
+   "data_type": "float",
+   "normal_min": 35.0,
+   "normal_max": 60.0,
+   "normal_value": 45.0,
+   "warning_low": 30.0,
+   "warning_high": null,
+   "alarm_low": 25.0,
+   "alarm_high": null,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT"
+   ]
+  },
+  "mapping": {
+   "tag_name": "BR101.DOPV",
+   "asset_id": "BR-101",
+   "rest_endpoint": "/api/v1/tags/BR101.DOPV",
+   "websocket_path_or_payload_key": "tags.BR101.DOPV",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/BR-101/BR101/DOPV",
+   "mqtt_metric_name": "BR101/DOPV",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/BR-101",
+   "bacnet_object_name": null,
+   "bacnet_object_type": null,
+   "bacnet_instance": null,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": false
+  }
+ },
+ "BR101.AgitatorRPM": {
+  "value": {
+   "tag_name": "BR101.AgitatorRPM",
+   "asset_id": "BR-101",
+   "value": 117.254,
+   "unit": "rpm",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:30:06.181305Z",
+   "description": "Agitator speed"
+  },
+  "definition": {
+   "tag_name": "BR101.AgitatorRPM",
+   "asset_id": "BR-101",
+   "description": "Agitator speed",
+   "unit": "rpm",
+   "data_type": "float",
+   "normal_min": 80.0,
+   "normal_max": 140.0,
+   "normal_value": 112.0,
+   "warning_low": null,
+   "warning_high": null,
+   "alarm_low": null,
+   "alarm_high": null,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT"
+   ]
+  },
+  "mapping": {
+   "tag_name": "BR101.AgitatorRPM",
+   "asset_id": "BR-101",
+   "rest_endpoint": "/api/v1/tags/BR101.AgitatorRPM",
+   "websocket_path_or_payload_key": "tags.BR101.AgitatorRPM",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/BR-101/BR101/AgitatorRPM",
+   "mqtt_metric_name": "BR101/AgitatorRPM",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/BR-101",
+   "bacnet_object_name": null,
+   "bacnet_object_type": null,
+   "bacnet_instance": null,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": false
+  }
+ },
+ "BR101.FoamDetected": {
+  "value": {
+   "tag_name": "BR101.FoamDetected",
+   "asset_id": "BR-101",
+   "value": false,
+   "unit": "boolean",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:29:54.835137Z",
+   "description": "Foam detector state"
+  },
+  "definition": {
+   "tag_name": "BR101.FoamDetected",
+   "asset_id": "BR-101",
+   "description": "Foam detector state",
+   "unit": "boolean",
+   "data_type": "bool",
+   "normal_min": null,
+   "normal_max": null,
+   "normal_value": false,
+   "warning_low": null,
+   "warning_high": null,
+   "alarm_low": null,
+   "alarm_high": null,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT"
+   ]
+  },
+  "mapping": {
+   "tag_name": "BR101.FoamDetected",
+   "asset_id": "BR-101",
+   "rest_endpoint": "/api/v1/tags/BR101.FoamDetected",
+   "websocket_path_or_payload_key": "tags.BR101.FoamDetected",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/BR-101/BR101/FoamDetected",
+   "mqtt_metric_name": "BR101/FoamDetected",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/BR-101",
+   "bacnet_object_name": null,
+   "bacnet_object_type": null,
+   "bacnet_instance": null,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": false
+  }
+ },
+ "BR101.BatchID": {
+  "value": {
+   "tag_name": "BR101.BatchID",
+   "asset_id": "BR-101",
+   "value": "BATCH-OFI-2401",
+   "unit": "string",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:29:54.835137Z",
+   "description": "Current bioreactor batch ID"
+  },
+  "definition": {
+   "tag_name": "BR101.BatchID",
+   "asset_id": "BR-101",
+   "description": "Current bioreactor batch ID",
+   "unit": "string",
+   "data_type": "string",
+   "normal_min": null,
+   "normal_max": null,
+   "normal_value": "BATCH-OFI-2401",
+   "warning_low": null,
+   "warning_high": null,
+   "alarm_low": null,
+   "alarm_high": null,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT"
+   ]
+  },
+  "mapping": {
+   "tag_name": "BR101.BatchID",
+   "asset_id": "BR-101",
+   "rest_endpoint": "/api/v1/tags/BR101.BatchID",
+   "websocket_path_or_payload_key": "tags.BR101.BatchID",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/BR-101/BR101/BatchID",
+   "mqtt_metric_name": "BR101/BatchID",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/BR-101",
+   "bacnet_object_name": null,
+   "bacnet_object_type": null,
+   "bacnet_instance": null,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": false
+  }
+ },
+ "BR101.RecipePhase": {
+  "value": {
+   "tag_name": "BR101.RecipePhase",
+   "asset_id": "BR-101",
+   "value": "Growth",
+   "unit": "string",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:29:54.835137Z",
+   "description": "Current bioreactor recipe phase"
+  },
+  "definition": {
+   "tag_name": "BR101.RecipePhase",
+   "asset_id": "BR-101",
+   "description": "Current bioreactor recipe phase",
+   "unit": "string",
+   "data_type": "string",
+   "normal_min": null,
+   "normal_max": null,
+   "normal_value": "Growth",
+   "warning_low": null,
+   "warning_high": null,
+   "alarm_low": null,
+   "alarm_high": null,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT"
+   ]
+  },
+  "mapping": {
+   "tag_name": "BR101.RecipePhase",
+   "asset_id": "BR-101",
+   "rest_endpoint": "/api/v1/tags/BR101.RecipePhase",
+   "websocket_path_or_payload_key": "tags.BR101.RecipePhase",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/BR-101/BR101/RecipePhase",
+   "mqtt_metric_name": "BR101/RecipePhase",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/BR-101",
+   "bacnet_object_name": null,
+   "bacnet_object_type": null,
+   "bacnet_instance": null,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": false
+  }
+ },
+ "BR101.AlarmActive": {
+  "value": {
+   "tag_name": "BR101.AlarmActive",
+   "asset_id": "BR-101",
+   "value": false,
+   "unit": "boolean",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:30:06.181471Z",
+   "description": "Bioreactor alarm active flag"
+  },
+  "definition": {
+   "tag_name": "BR101.AlarmActive",
+   "asset_id": "BR-101",
+   "description": "Bioreactor alarm active flag",
+   "unit": "boolean",
+   "data_type": "bool",
+   "normal_min": null,
+   "normal_max": null,
+   "normal_value": false,
+   "warning_low": null,
+   "warning_high": null,
+   "alarm_low": null,
+   "alarm_high": null,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT"
+   ]
+  },
+  "mapping": {
+   "tag_name": "BR101.AlarmActive",
+   "asset_id": "BR-101",
+   "rest_endpoint": "/api/v1/tags/BR101.AlarmActive",
+   "websocket_path_or_payload_key": "tags.BR101.AlarmActive",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/BR-101/BR101/AlarmActive",
+   "mqtt_metric_name": "BR101/AlarmActive",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/BR-101",
+   "bacnet_object_name": null,
+   "bacnet_object_type": null,
+   "bacnet_instance": null,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": false
+  }
+ },
+ "WFI201.TemperaturePV": {
+  "value": {
+   "tag_name": "WFI201.TemperaturePV",
+   "asset_id": "WFI-201",
+   "value": 77.496,
+   "unit": "degC",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:30:06.181331Z",
+   "description": "WFI loop temperature"
+  },
+  "definition": {
+   "tag_name": "WFI201.TemperaturePV",
+   "asset_id": "WFI-201",
+   "description": "WFI loop temperature",
+   "unit": "degC",
+   "data_type": "float",
+   "normal_min": 72.0,
+   "normal_max": 82.0,
+   "normal_value": 78.0,
+   "warning_low": null,
+   "warning_high": null,
+   "alarm_low": null,
+   "alarm_high": null,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT",
+    "BACnet"
+   ]
+  },
+  "mapping": {
+   "tag_name": "WFI201.TemperaturePV",
+   "asset_id": "WFI-201",
+   "rest_endpoint": "/api/v1/tags/WFI201.TemperaturePV",
+   "websocket_path_or_payload_key": "tags.WFI201.TemperaturePV",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/WFI-201/WFI201/TemperaturePV",
+   "mqtt_metric_name": "WFI201/TemperaturePV",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/WFI-201",
+   "bacnet_object_name": "WFI201_Temperature",
+   "bacnet_object_type": "analogInput",
+   "bacnet_instance": 4,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": true
+  }
+ },
+ "WFI201.Conductivity": {
+  "value": {
+   "tag_name": "WFI201.Conductivity",
+   "asset_id": "WFI-201",
+   "value": 0.45,
+   "unit": "uS/cm",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:30:06.181437Z",
+   "description": "WFI conductivity"
+  },
+  "definition": {
+   "tag_name": "WFI201.Conductivity",
+   "asset_id": "WFI-201",
+   "description": "WFI conductivity",
+   "unit": "uS/cm",
+   "data_type": "float",
+   "normal_min": 0.2,
+   "normal_max": 0.8,
+   "normal_value": 0.45,
+   "warning_low": null,
+   "warning_high": 1.0,
+   "alarm_low": null,
+   "alarm_high": 1.3,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT",
+    "BACnet"
+   ]
+  },
+  "mapping": {
+   "tag_name": "WFI201.Conductivity",
+   "asset_id": "WFI-201",
+   "rest_endpoint": "/api/v1/tags/WFI201.Conductivity",
+   "websocket_path_or_payload_key": "tags.WFI201.Conductivity",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/WFI-201/WFI201/Conductivity",
+   "mqtt_metric_name": "WFI201/Conductivity",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/WFI-201",
+   "bacnet_object_name": "WFI201_Conductivity",
+   "bacnet_object_type": "analogInput",
+   "bacnet_instance": 5,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": true
+  }
+ },
+ "WFI201.TOC": {
+  "value": {
+   "tag_name": "WFI201.TOC",
+   "asset_id": "WFI-201",
+   "value": 90.0,
+   "unit": "ppb",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:30:06.181441Z",
+   "description": "WFI total organic carbon"
+  },
+  "definition": {
+   "tag_name": "WFI201.TOC",
+   "asset_id": "WFI-201",
+   "description": "WFI total organic carbon",
+   "unit": "ppb",
+   "data_type": "float",
+   "normal_min": 20.0,
+   "normal_max": 250.0,
+   "normal_value": 90.0,
+   "warning_low": null,
+   "warning_high": 400.0,
+   "alarm_low": null,
+   "alarm_high": 500.0,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT",
+    "BACnet"
+   ]
+  },
+  "mapping": {
+   "tag_name": "WFI201.TOC",
+   "asset_id": "WFI-201",
+   "rest_endpoint": "/api/v1/tags/WFI201.TOC",
+   "websocket_path_or_payload_key": "tags.WFI201.TOC",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/WFI-201/WFI201/TOC",
+   "mqtt_metric_name": "WFI201/TOC",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/WFI-201",
+   "bacnet_object_name": "WFI201_TOC",
+   "bacnet_object_type": "analogInput",
+   "bacnet_instance": 7,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": true
+  }
+ },
+ "WFI201.Pressure": {
+  "value": {
+   "tag_name": "WFI201.Pressure",
+   "asset_id": "WFI-201",
+   "value": 2.77,
+   "unit": "bar",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:30:06.181351Z",
+   "description": "WFI loop pressure"
+  },
+  "definition": {
+   "tag_name": "WFI201.Pressure",
+   "asset_id": "WFI-201",
+   "description": "WFI loop pressure",
+   "unit": "bar",
+   "data_type": "float",
+   "normal_min": 2.2,
+   "normal_max": 3.2,
+   "normal_value": 2.7,
+   "warning_low": null,
+   "warning_high": null,
+   "alarm_low": null,
+   "alarm_high": null,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT",
+    "BACnet"
+   ]
+  },
+  "mapping": {
+   "tag_name": "WFI201.Pressure",
+   "asset_id": "WFI-201",
+   "rest_endpoint": "/api/v1/tags/WFI201.Pressure",
+   "websocket_path_or_payload_key": "tags.WFI201.Pressure",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/WFI-201/WFI201/Pressure",
+   "mqtt_metric_name": "WFI201/Pressure",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/WFI-201",
+   "bacnet_object_name": "WFI201_Pressure",
+   "bacnet_object_type": "analogInput",
+   "bacnet_instance": 6,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": true
+  }
+ },
+ "WFI201.FlowRate": {
+  "value": {
+   "tag_name": "WFI201.FlowRate",
+   "asset_id": "WFI-201",
+   "value": 131.284,
+   "unit": "L/min",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:30:06.181356Z",
+   "description": "WFI loop flow rate"
+  },
+  "definition": {
+   "tag_name": "WFI201.FlowRate",
+   "asset_id": "WFI-201",
+   "description": "WFI loop flow rate",
+   "unit": "L/min",
+   "data_type": "float",
+   "normal_min": 110.0,
+   "normal_max": 150.0,
+   "normal_value": 130.0,
+   "warning_low": null,
+   "warning_high": null,
+   "alarm_low": null,
+   "alarm_high": null,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT"
+   ]
+  },
+  "mapping": {
+   "tag_name": "WFI201.FlowRate",
+   "asset_id": "WFI-201",
+   "rest_endpoint": "/api/v1/tags/WFI201.FlowRate",
+   "websocket_path_or_payload_key": "tags.WFI201.FlowRate",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/WFI-201/WFI201/FlowRate",
+   "mqtt_metric_name": "WFI201/FlowRate",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/WFI-201",
+   "bacnet_object_name": null,
+   "bacnet_object_type": null,
+   "bacnet_instance": null,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": false
+  }
+ },
+ "WFI201.SanitizationActive": {
+  "value": {
+   "tag_name": "WFI201.SanitizationActive",
+   "asset_id": "WFI-201",
+   "value": false,
+   "unit": "boolean",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:29:54.835137Z",
+   "description": "WFI sanitization active"
+  },
+  "definition": {
+   "tag_name": "WFI201.SanitizationActive",
+   "asset_id": "WFI-201",
+   "description": "WFI sanitization active",
+   "unit": "boolean",
+   "data_type": "bool",
+   "normal_min": null,
+   "normal_max": null,
+   "normal_value": false,
+   "warning_low": null,
+   "warning_high": null,
+   "alarm_low": null,
+   "alarm_high": null,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT",
+    "BACnet"
+   ]
+  },
+  "mapping": {
+   "tag_name": "WFI201.SanitizationActive",
+   "asset_id": "WFI-201",
+   "rest_endpoint": "/api/v1/tags/WFI201.SanitizationActive",
+   "websocket_path_or_payload_key": "tags.WFI201.SanitizationActive",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/WFI-201/WFI201/SanitizationActive",
+   "mqtt_metric_name": "WFI201/SanitizationActive",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/WFI-201",
+   "bacnet_object_name": "WFI201_SanitizationActive",
+   "bacnet_object_type": "binaryInput",
+   "bacnet_instance": 3,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": true
+  }
+ },
+ "WFI201.QualityStatus": {
+  "value": {
+   "tag_name": "WFI201.QualityStatus",
+   "asset_id": "WFI-201",
+   "value": "Released",
+   "unit": "string",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:30:06.181478Z",
+   "description": "WFI quality status"
+  },
+  "definition": {
+   "tag_name": "WFI201.QualityStatus",
+   "asset_id": "WFI-201",
+   "description": "WFI quality status",
+   "unit": "string",
+   "data_type": "string",
+   "normal_min": null,
+   "normal_max": null,
+   "normal_value": "Released",
+   "warning_low": null,
+   "warning_high": null,
+   "alarm_low": null,
+   "alarm_high": null,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT"
+   ]
+  },
+  "mapping": {
+   "tag_name": "WFI201.QualityStatus",
+   "asset_id": "WFI-201",
+   "rest_endpoint": "/api/v1/tags/WFI201.QualityStatus",
+   "websocket_path_or_payload_key": "tags.WFI201.QualityStatus",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/WFI-201/WFI201/QualityStatus",
+   "mqtt_metric_name": "WFI201/QualityStatus",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/WFI-201",
+   "bacnet_object_name": null,
+   "bacnet_object_type": null,
+   "bacnet_instance": null,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": false
+  }
+ },
+ "CSG301.SteamPressure": {
+  "value": {
+   "tag_name": "CSG301.SteamPressure",
+   "asset_id": "CSG-301",
+   "value": 2.966,
+   "unit": "bar",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:30:06.181362Z",
+   "description": "Clean steam pressure"
+  },
+  "definition": {
+   "tag_name": "CSG301.SteamPressure",
+   "asset_id": "CSG-301",
+   "description": "Clean steam pressure",
+   "unit": "bar",
+   "data_type": "float",
+   "normal_min": 2.6,
+   "normal_max": 3.4,
+   "normal_value": 3.0,
+   "warning_low": null,
+   "warning_high": null,
+   "alarm_low": null,
+   "alarm_high": null,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT"
+   ]
+  },
+  "mapping": {
+   "tag_name": "CSG301.SteamPressure",
+   "asset_id": "CSG-301",
+   "rest_endpoint": "/api/v1/tags/CSG301.SteamPressure",
+   "websocket_path_or_payload_key": "tags.CSG301.SteamPressure",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/CSG-301/CSG301/SteamPressure",
+   "mqtt_metric_name": "CSG301/SteamPressure",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/CSG-301",
+   "bacnet_object_name": null,
+   "bacnet_object_type": null,
+   "bacnet_instance": null,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": false
+  }
+ },
+ "CSG301.SteamTemperature": {
+  "value": {
+   "tag_name": "CSG301.SteamTemperature",
+   "asset_id": "CSG-301",
+   "value": 135.071,
+   "unit": "degC",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:30:06.181366Z",
+   "description": "Clean steam temperature"
+  },
+  "definition": {
+   "tag_name": "CSG301.SteamTemperature",
+   "asset_id": "CSG-301",
+   "description": "Clean steam temperature",
+   "unit": "degC",
+   "data_type": "float",
+   "normal_min": 132.0,
+   "normal_max": 138.0,
+   "normal_value": 135.0,
+   "warning_low": null,
+   "warning_high": null,
+   "alarm_low": null,
+   "alarm_high": null,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT"
+   ]
+  },
+  "mapping": {
+   "tag_name": "CSG301.SteamTemperature",
+   "asset_id": "CSG-301",
+   "rest_endpoint": "/api/v1/tags/CSG301.SteamTemperature",
+   "websocket_path_or_payload_key": "tags.CSG301.SteamTemperature",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/CSG-301/CSG301/SteamTemperature",
+   "mqtt_metric_name": "CSG301/SteamTemperature",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/CSG-301",
+   "bacnet_object_name": null,
+   "bacnet_object_type": null,
+   "bacnet_instance": null,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": false
+  }
+ },
+ "CSG301.AlarmActive": {
+  "value": {
+   "tag_name": "CSG301.AlarmActive",
+   "asset_id": "CSG-301",
+   "value": false,
+   "unit": "boolean",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:29:54.835137Z",
+   "description": "Clean steam generator alarm active"
+  },
+  "definition": {
+   "tag_name": "CSG301.AlarmActive",
+   "asset_id": "CSG-301",
+   "description": "Clean steam generator alarm active",
+   "unit": "boolean",
+   "data_type": "bool",
+   "normal_min": null,
+   "normal_max": null,
+   "normal_value": false,
+   "warning_low": null,
+   "warning_high": null,
+   "alarm_low": null,
+   "alarm_high": null,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT"
+   ]
+  },
+  "mapping": {
+   "tag_name": "CSG301.AlarmActive",
+   "asset_id": "CSG-301",
+   "rest_endpoint": "/api/v1/tags/CSG301.AlarmActive",
+   "websocket_path_or_payload_key": "tags.CSG301.AlarmActive",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/CSG-301/CSG301/AlarmActive",
+   "mqtt_metric_name": "CSG301/AlarmActive",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/CSG-301",
+   "bacnet_object_name": null,
+   "bacnet_object_type": null,
+   "bacnet_instance": null,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": false
+  }
+ },
+ "PW101.Level": {
+  "value": {
+   "tag_name": "PW101.Level",
+   "asset_id": "PW-101",
+   "value": 70.712,
+   "unit": "%",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:30:06.181371Z",
+   "description": "Purified water tank level"
+  },
+  "definition": {
+   "tag_name": "PW101.Level",
+   "asset_id": "PW-101",
+   "description": "Purified water tank level",
+   "unit": "%",
+   "data_type": "float",
+   "normal_min": 45.0,
+   "normal_max": 85.0,
+   "normal_value": 68.0,
+   "warning_low": null,
+   "warning_high": null,
+   "alarm_low": null,
+   "alarm_high": null,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT"
+   ]
+  },
+  "mapping": {
+   "tag_name": "PW101.Level",
+   "asset_id": "PW-101",
+   "rest_endpoint": "/api/v1/tags/PW101.Level",
+   "websocket_path_or_payload_key": "tags.PW101.Level",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/PW-101/PW101/Level",
+   "mqtt_metric_name": "PW101/Level",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/PW-101",
+   "bacnet_object_name": null,
+   "bacnet_object_type": null,
+   "bacnet_instance": null,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": false
+  }
+ },
+ "PW101.TemperaturePV": {
+  "value": {
+   "tag_name": "PW101.TemperaturePV",
+   "asset_id": "PW-101",
+   "value": 21.484,
+   "unit": "degC",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:30:06.181377Z",
+   "description": "Purified water tank temperature"
+  },
+  "definition": {
+   "tag_name": "PW101.TemperaturePV",
+   "asset_id": "PW-101",
+   "description": "Purified water tank temperature",
+   "unit": "degC",
+   "data_type": "float",
+   "normal_min": 18.0,
+   "normal_max": 25.0,
+   "normal_value": 21.0,
+   "warning_low": null,
+   "warning_high": null,
+   "alarm_low": null,
+   "alarm_high": null,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT"
+   ]
+  },
+  "mapping": {
+   "tag_name": "PW101.TemperaturePV",
+   "asset_id": "PW-101",
+   "rest_endpoint": "/api/v1/tags/PW101.TemperaturePV",
+   "websocket_path_or_payload_key": "tags.PW101.TemperaturePV",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/PW-101/PW101/TemperaturePV",
+   "mqtt_metric_name": "PW101/TemperaturePV",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/PW-101",
+   "bacnet_object_name": null,
+   "bacnet_object_type": null,
+   "bacnet_instance": null,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": false
+  }
+ },
+ "PW101.Conductivity": {
+  "value": {
+   "tag_name": "PW101.Conductivity",
+   "asset_id": "PW-101",
+   "value": 0.697,
+   "unit": "uS/cm",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:30:06.181381Z",
+   "description": "Purified water conductivity"
+  },
+  "definition": {
+   "tag_name": "PW101.Conductivity",
+   "asset_id": "PW-101",
+   "description": "Purified water conductivity",
+   "unit": "uS/cm",
+   "data_type": "float",
+   "normal_min": 0.4,
+   "normal_max": 1.1,
+   "normal_value": 0.7,
+   "warning_low": null,
+   "warning_high": null,
+   "alarm_low": null,
+   "alarm_high": null,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT"
+   ]
+  },
+  "mapping": {
+   "tag_name": "PW101.Conductivity",
+   "asset_id": "PW-101",
+   "rest_endpoint": "/api/v1/tags/PW101.Conductivity",
+   "websocket_path_or_payload_key": "tags.PW101.Conductivity",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/PW-101/PW101/Conductivity",
+   "mqtt_metric_name": "PW101/Conductivity",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/PW-101",
+   "bacnet_object_name": null,
+   "bacnet_object_type": null,
+   "bacnet_instance": null,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": false
+  }
+ },
+ "CR01.TemperaturePV": {
+  "value": {
+   "tag_name": "CR01.TemperaturePV",
+   "asset_id": "CR-01",
+   "value": 20.1,
+   "unit": "degC",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:30:06.181386Z",
+   "description": "Cleanroom temperature"
+  },
+  "definition": {
+   "tag_name": "CR01.TemperaturePV",
+   "asset_id": "CR-01",
+   "description": "Cleanroom temperature",
+   "unit": "degC",
+   "data_type": "float",
+   "normal_min": 18.0,
+   "normal_max": 22.0,
+   "normal_value": 20.0,
+   "warning_low": null,
+   "warning_high": null,
+   "alarm_low": null,
+   "alarm_high": null,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT",
+    "BACnet"
+   ]
+  },
+  "mapping": {
+   "tag_name": "CR01.TemperaturePV",
+   "asset_id": "CR-01",
+   "rest_endpoint": "/api/v1/tags/CR01.TemperaturePV",
+   "websocket_path_or_payload_key": "tags.CR01.TemperaturePV",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/CR-01/CR01/TemperaturePV",
+   "mqtt_metric_name": "CR01/TemperaturePV",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/CR-01",
+   "bacnet_object_name": "CR01_Temperature",
+   "bacnet_object_type": "analogInput",
+   "bacnet_instance": 1,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": true
+  }
+ },
+ "CR01.RelativeHumidity": {
+  "value": {
+   "tag_name": "CR01.RelativeHumidity",
+   "asset_id": "CR-01",
+   "value": 45.0,
+   "unit": "%",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:30:06.181453Z",
+   "description": "Cleanroom relative humidity"
+  },
+  "definition": {
+   "tag_name": "CR01.RelativeHumidity",
+   "asset_id": "CR-01",
+   "description": "Cleanroom relative humidity",
+   "unit": "%",
+   "data_type": "float",
+   "normal_min": 35.0,
+   "normal_max": 55.0,
+   "normal_value": 45.0,
+   "warning_low": null,
+   "warning_high": 60.0,
+   "alarm_low": null,
+   "alarm_high": 65.0,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT",
+    "BACnet"
+   ]
+  },
+  "mapping": {
+   "tag_name": "CR01.RelativeHumidity",
+   "asset_id": "CR-01",
+   "rest_endpoint": "/api/v1/tags/CR01.RelativeHumidity",
+   "websocket_path_or_payload_key": "tags.CR01.RelativeHumidity",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/CR-01/CR01/RelativeHumidity",
+   "mqtt_metric_name": "CR01/RelativeHumidity",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/CR-01",
+   "bacnet_object_name": "CR01_RelativeHumidity",
+   "bacnet_object_type": "analogInput",
+   "bacnet_instance": 2,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": true
+  }
+ },
+ "CR01.DifferentialPressure": {
+  "value": {
+   "tag_name": "CR01.DifferentialPressure",
+   "asset_id": "CR-01",
+   "value": 9.6,
+   "unit": "Pa",
+   "quality": "Warning",
+   "timestamp": "2026-11-02T11:30:06.181449Z",
+   "description": "Cleanroom differential pressure"
+  },
+  "definition": {
+   "tag_name": "CR01.DifferentialPressure",
+   "asset_id": "CR-01",
+   "description": "Cleanroom differential pressure",
+   "unit": "Pa",
+   "data_type": "float",
+   "normal_min": 12.0,
+   "normal_max": 18.0,
+   "normal_value": 15.0,
+   "warning_low": 10.0,
+   "warning_high": null,
+   "alarm_low": 7.0,
+   "alarm_high": null,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT",
+    "BACnet"
+   ]
+  },
+  "mapping": {
+   "tag_name": "CR01.DifferentialPressure",
+   "asset_id": "CR-01",
+   "rest_endpoint": "/api/v1/tags/CR01.DifferentialPressure",
+   "websocket_path_or_payload_key": "tags.CR01.DifferentialPressure",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/CR-01/CR01/DifferentialPressure",
+   "mqtt_metric_name": "CR01/DifferentialPressure",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/CR-01",
+   "bacnet_object_name": "CR01_DifferentialPressure",
+   "bacnet_object_type": "analogInput",
+   "bacnet_instance": 3,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": true
+  }
+ },
+ "CR01.DoorOpen": {
+  "value": {
+   "tag_name": "CR01.DoorOpen",
+   "asset_id": "CR-01",
+   "value": false,
+   "unit": "boolean",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:29:54.835137Z",
+   "description": "Cleanroom door open state"
+  },
+  "definition": {
+   "tag_name": "CR01.DoorOpen",
+   "asset_id": "CR-01",
+   "description": "Cleanroom door open state",
+   "unit": "boolean",
+   "data_type": "bool",
+   "normal_min": null,
+   "normal_max": null,
+   "normal_value": false,
+   "warning_low": null,
+   "warning_high": null,
+   "alarm_low": null,
+   "alarm_high": null,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT",
+    "BACnet"
+   ]
+  },
+  "mapping": {
+   "tag_name": "CR01.DoorOpen",
+   "asset_id": "CR-01",
+   "rest_endpoint": "/api/v1/tags/CR01.DoorOpen",
+   "websocket_path_or_payload_key": "tags.CR01.DoorOpen",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/CR-01/CR01/DoorOpen",
+   "mqtt_metric_name": "CR01/DoorOpen",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/CR-01",
+   "bacnet_object_name": "CR01_DoorOpen",
+   "bacnet_object_type": "binaryInput",
+   "bacnet_instance": 1,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": true
+  }
+ },
+ "CR01.ParticleCount05um": {
+  "value": {
+   "tag_name": "CR01.ParticleCount05um",
+   "asset_id": "CR-01",
+   "value": 6275.166,
+   "unit": "count/m3",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:30:06.181397Z",
+   "description": "0.5 micron particle count"
+  },
+  "definition": {
+   "tag_name": "CR01.ParticleCount05um",
+   "asset_id": "CR-01",
+   "description": "0.5 micron particle count",
+   "unit": "count/m3",
+   "data_type": "float",
+   "normal_min": 3000.0,
+   "normal_max": 12000.0,
+   "normal_value": 6500.0,
+   "warning_low": null,
+   "warning_high": null,
+   "alarm_low": null,
+   "alarm_high": null,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT"
+   ]
+  },
+  "mapping": {
+   "tag_name": "CR01.ParticleCount05um",
+   "asset_id": "CR-01",
+   "rest_endpoint": "/api/v1/tags/CR01.ParticleCount05um",
+   "websocket_path_or_payload_key": "tags.CR01.ParticleCount05um",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/CR-01/CR01/ParticleCount05um",
+   "mqtt_metric_name": "CR01/ParticleCount05um",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/CR-01",
+   "bacnet_object_name": null,
+   "bacnet_object_type": null,
+   "bacnet_instance": null,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": false
+  }
+ },
+ "CR01.EnvironmentalAlarm": {
+  "value": {
+   "tag_name": "CR01.EnvironmentalAlarm",
+   "asset_id": "CR-01",
+   "value": true,
+   "unit": "boolean",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:30:06.181475Z",
+   "description": "Cleanroom environmental alarm"
+  },
+  "definition": {
+   "tag_name": "CR01.EnvironmentalAlarm",
+   "asset_id": "CR-01",
+   "description": "Cleanroom environmental alarm",
+   "unit": "boolean",
+   "data_type": "bool",
+   "normal_min": null,
+   "normal_max": null,
+   "normal_value": false,
+   "warning_low": null,
+   "warning_high": null,
+   "alarm_low": null,
+   "alarm_high": null,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT",
+    "BACnet"
+   ]
+  },
+  "mapping": {
+   "tag_name": "CR01.EnvironmentalAlarm",
+   "asset_id": "CR-01",
+   "rest_endpoint": "/api/v1/tags/CR01.EnvironmentalAlarm",
+   "websocket_path_or_payload_key": "tags.CR01.EnvironmentalAlarm",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/CR-01/CR01/EnvironmentalAlarm",
+   "mqtt_metric_name": "CR01/EnvironmentalAlarm",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/CR-01",
+   "bacnet_object_name": "CR01_EnvironmentalAlarm",
+   "bacnet_object_type": "binaryInput",
+   "bacnet_instance": 2,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": true
+  }
+ },
+ "FL401.LineState": {
+  "value": {
+   "tag_name": "FL401.LineState",
+   "asset_id": "FL-401",
+   "value": "Execute",
+   "unit": "string",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:29:54.835137Z",
+   "description": "Packaging line state"
+  },
+  "definition": {
+   "tag_name": "FL401.LineState",
+   "asset_id": "FL-401",
+   "description": "Packaging line state",
+   "unit": "string",
+   "data_type": "string",
+   "normal_min": null,
+   "normal_max": null,
+   "normal_value": "Execute",
+   "warning_low": null,
+   "warning_high": null,
+   "alarm_low": null,
+   "alarm_high": null,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT"
+   ]
+  },
+  "mapping": {
+   "tag_name": "FL401.LineState",
+   "asset_id": "FL-401",
+   "rest_endpoint": "/api/v1/tags/FL401.LineState",
+   "websocket_path_or_payload_key": "tags.FL401.LineState",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/FL-401/FL401/LineState",
+   "mqtt_metric_name": "FL401/LineState",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/FL-401",
+   "bacnet_object_name": null,
+   "bacnet_object_type": null,
+   "bacnet_instance": null,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": false
+  }
+ },
+ "FL401.UnitsPerMinute": {
+  "value": {
+   "tag_name": "FL401.UnitsPerMinute",
+   "asset_id": "FL-401",
+   "value": 107.253,
+   "unit": "units/min",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:30:06.181402Z",
+   "description": "Line throughput"
+  },
+  "definition": {
+   "tag_name": "FL401.UnitsPerMinute",
+   "asset_id": "FL-401",
+   "description": "Line throughput",
+   "unit": "units/min",
+   "data_type": "float",
+   "normal_min": 90.0,
+   "normal_max": 125.0,
+   "normal_value": 108.0,
+   "warning_low": null,
+   "warning_high": null,
+   "alarm_low": null,
+   "alarm_high": null,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT"
+   ]
+  },
+  "mapping": {
+   "tag_name": "FL401.UnitsPerMinute",
+   "asset_id": "FL-401",
+   "rest_endpoint": "/api/v1/tags/FL401.UnitsPerMinute",
+   "websocket_path_or_payload_key": "tags.FL401.UnitsPerMinute",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/FL-401/FL401/UnitsPerMinute",
+   "mqtt_metric_name": "FL401/UnitsPerMinute",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/FL-401",
+   "bacnet_object_name": null,
+   "bacnet_object_type": null,
+   "bacnet_instance": null,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": false
+  }
+ },
+ "FL401.RejectCount": {
+  "value": {
+   "tag_name": "FL401.RejectCount",
+   "asset_id": "FL-401",
+   "value": 3,
+   "unit": "count",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:30:06.181459Z",
+   "description": "Reject count"
+  },
+  "definition": {
+   "tag_name": "FL401.RejectCount",
+   "asset_id": "FL-401",
+   "description": "Reject count",
+   "unit": "count",
+   "data_type": "int",
+   "normal_min": null,
+   "normal_max": null,
+   "normal_value": 3,
+   "warning_low": null,
+   "warning_high": 12.0,
+   "alarm_low": null,
+   "alarm_high": 24.0,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT"
+   ]
+  },
+  "mapping": {
+   "tag_name": "FL401.RejectCount",
+   "asset_id": "FL-401",
+   "rest_endpoint": "/api/v1/tags/FL401.RejectCount",
+   "websocket_path_or_payload_key": "tags.FL401.RejectCount",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/FL-401/FL401/RejectCount",
+   "mqtt_metric_name": "FL401/RejectCount",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/FL-401",
+   "bacnet_object_name": null,
+   "bacnet_object_type": null,
+   "bacnet_instance": null,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": false
+  }
+ },
+ "FL401.VisionInspectionPassRate": {
+  "value": {
+   "tag_name": "FL401.VisionInspectionPassRate",
+   "asset_id": "FL-401",
+   "value": 99.4,
+   "unit": "%",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:30:06.181463Z",
+   "description": "Vision inspection pass rate"
+  },
+  "definition": {
+   "tag_name": "FL401.VisionInspectionPassRate",
+   "asset_id": "FL-401",
+   "description": "Vision inspection pass rate",
+   "unit": "%",
+   "data_type": "float",
+   "normal_min": 98.0,
+   "normal_max": 100.0,
+   "normal_value": 99.4,
+   "warning_low": 97.0,
+   "warning_high": null,
+   "alarm_low": 95.0,
+   "alarm_high": null,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT"
+   ]
+  },
+  "mapping": {
+   "tag_name": "FL401.VisionInspectionPassRate",
+   "asset_id": "FL-401",
+   "rest_endpoint": "/api/v1/tags/FL401.VisionInspectionPassRate",
+   "websocket_path_or_payload_key": "tags.FL401.VisionInspectionPassRate",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/FL-401/FL401/VisionInspectionPassRate",
+   "mqtt_metric_name": "FL401/VisionInspectionPassRate",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/FL-401",
+   "bacnet_object_name": null,
+   "bacnet_object_type": null,
+   "bacnet_instance": null,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": false
+  }
+ },
+ "FL401.LabelVerificationStatus": {
+  "value": {
+   "tag_name": "FL401.LabelVerificationStatus",
+   "asset_id": "FL-401",
+   "value": "Passed",
+   "unit": "string",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:29:54.835137Z",
+   "description": "Label verification status"
+  },
+  "definition": {
+   "tag_name": "FL401.LabelVerificationStatus",
+   "asset_id": "FL-401",
+   "description": "Label verification status",
+   "unit": "string",
+   "data_type": "string",
+   "normal_min": null,
+   "normal_max": null,
+   "normal_value": "Passed",
+   "warning_low": null,
+   "warning_high": null,
+   "alarm_low": null,
+   "alarm_high": null,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT"
+   ]
+  },
+  "mapping": {
+   "tag_name": "FL401.LabelVerificationStatus",
+   "asset_id": "FL-401",
+   "rest_endpoint": "/api/v1/tags/FL401.LabelVerificationStatus",
+   "websocket_path_or_payload_key": "tags.FL401.LabelVerificationStatus",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/FL-401/FL401/LabelVerificationStatus",
+   "mqtt_metric_name": "FL401/LabelVerificationStatus",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/FL-401",
+   "bacnet_object_name": null,
+   "bacnet_object_type": null,
+   "bacnet_instance": null,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": false
+  }
+ },
+ "FL401.BatchID": {
+  "value": {
+   "tag_name": "FL401.BatchID",
+   "asset_id": "FL-401",
+   "value": "LOT-FL-401-2401",
+   "unit": "string",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:29:54.835137Z",
+   "description": "Current filling line lot"
+  },
+  "definition": {
+   "tag_name": "FL401.BatchID",
+   "asset_id": "FL-401",
+   "description": "Current filling line lot",
+   "unit": "string",
+   "data_type": "string",
+   "normal_min": null,
+   "normal_max": null,
+   "normal_value": "LOT-FL-401-2401",
+   "warning_low": null,
+   "warning_high": null,
+   "alarm_low": null,
+   "alarm_high": null,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT"
+   ]
+  },
+  "mapping": {
+   "tag_name": "FL401.BatchID",
+   "asset_id": "FL-401",
+   "rest_endpoint": "/api/v1/tags/FL401.BatchID",
+   "websocket_path_or_payload_key": "tags.FL401.BatchID",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/FL-401/FL401/BatchID",
+   "mqtt_metric_name": "FL401/BatchID",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/FL-401",
+   "bacnet_object_name": null,
+   "bacnet_object_type": null,
+   "bacnet_instance": null,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": false
+  }
+ },
+ "FL401.AlarmActive": {
+  "value": {
+   "tag_name": "FL401.AlarmActive",
+   "asset_id": "FL-401",
+   "value": false,
+   "unit": "boolean",
+   "quality": "Good",
+   "timestamp": "2026-11-02T11:30:06.181481Z",
+   "description": "Filling line alarm active flag"
+  },
+  "definition": {
+   "tag_name": "FL401.AlarmActive",
+   "asset_id": "FL-401",
+   "description": "Filling line alarm active flag",
+   "unit": "boolean",
+   "data_type": "bool",
+   "normal_min": null,
+   "normal_max": null,
+   "normal_value": false,
+   "warning_low": null,
+   "warning_high": null,
+   "alarm_low": null,
+   "alarm_high": null,
+   "protocols": [
+    "REST",
+    "WebSocket",
+    "OPC-UA",
+    "MQTT"
+   ]
+  },
+  "mapping": {
+   "tag_name": "FL401.AlarmActive",
+   "asset_id": "FL-401",
+   "rest_endpoint": "/api/v1/tags/FL401.AlarmActive",
+   "websocket_path_or_payload_key": "tags.FL401.AlarmActive",
+   "opcua_node_path": "OpenFactoryDemoSite/Areas/FL-401/FL401/AlarmActive",
+   "mqtt_metric_name": "FL401/AlarmActive",
+   "mqtt_topic": "spBv1.0/OpenFactory/DDATA/DemoEdgeNode/FL-401",
+   "bacnet_object_name": null,
+   "bacnet_object_type": null,
+   "bacnet_instance": null,
+   "exposed_in_rest": true,
+   "exposed_in_websocket": true,
+   "exposed_in_opcua": true,
+   "exposed_in_mqtt": true,
+   "exposed_in_bacnet": false
+  }
+ }
+}

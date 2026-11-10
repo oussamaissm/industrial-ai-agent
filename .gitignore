@@ -1,0 +1,27 @@
+# Python
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Models
+models/*.gguf
+models/*.bin
+models/*.safetensors
+models/checkpoints/
+
+# Experiments
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
