@@ -4,7 +4,7 @@
 
 A production manager asks: *"Something is wrong with the pressure in one of our controlled areas. Which asset is affected?"* The agent queries the plant, finds the alarm, reads the telemetry, and answers with the **asset, the parameter, its value and its limit**. It never controls equipment. A person decides what to do.
 
-![At a glance](docs/diagrams/excalidraw/excalidraw-11-at-a-glance.png)
+![At a glance](docs/diagrams/excalidraw-11-at-a-glance.png)
 
 > **Honest scope:** research prototype. Two *simulated* plants, small benchmarks (3 and 4 tasks, one run per mode). It demonstrates an approach and a method, not proven industrial reliability.
 
@@ -36,7 +36,7 @@ The goal is to get an AI system working **inside a customer's environment**, not
 
 ## How a question becomes an answer
 
-![Request lifecycle](docs/diagrams/excalidraw/excalidraw-01-request-lifecycle.png)
+![Request lifecycle](docs/diagrams/excalidraw-01-request-lifecycle.png)
 
 The agent is a LangGraph state machine with four modes, so the same tasks can compare ways of combining an LLM, tools and verification:
 
@@ -47,19 +47,19 @@ The agent is a LangGraph state machine with four modes, so the same tasks can co
 | `verified` | An output check (valid JSON, confidence ≥ 0.5) with up to 2 retries |
 | `hybrid` | A small model first, escalating once to a larger model if the check fails |
 
-![The four modes](docs/diagrams/excalidraw/excalidraw-03-four-modes.png)
+![The four modes](docs/diagrams/excalidraw-03-four-modes.png)
 
-![Check, retry, escalate](docs/diagrams/excalidraw/excalidraw-07-verify-retry-escalate.png)
+![Check, retry, escalate](docs/diagrams/excalidraw-07-verify-retry-escalate.png)
 
 ## Design decisions
 
 **1. Read-only by construction.** Agent tools issue only `GET` requests. The benchmark harness injects faults to create a known plant state. The agent can neither cause the fault nor see how it was made. A test checks that the agent's tools cannot change the plant.
 
-![Read-only by design](docs/diagrams/excalidraw/excalidraw-05-read-only-by-design.png)
+![Read-only by design](docs/diagrams/excalidraw-05-read-only-by-design.png)
 
 **2. One interface, any plant.** The agent and the MCP server talk to `FactoryBackend`. The synthetic simulator and the Open Factory connector both implement it, so the original benchmark stays comparable.
 
-![Swap the plant](docs/diagrams/excalidraw/excalidraw-06-swap-the-plant.png)
+![Swap the plant](docs/diagrams/excalidraw-06-swap-the-plant.png)
 
 **3. Honest mapping to the customer system.** The Demo Factory has no orders and no downtime counters. The connector does not fake them: scheduling answers "not supported", and `analyze_machine_downtime` reports the assets currently in warning or alarm with parameter, value and limit.
 
@@ -69,7 +69,7 @@ The agent is a LangGraph state machine with four modes, so the same tasks can co
 
 **6. Deterministic ground truth.** Each task resets the plant, enables a fault, waits for the expected alarm, and only then asks the agent. Scoring requires the right asset **and** the right parameter.
 
-![Benchmark loop](docs/diagrams/excalidraw/excalidraw-02-benchmark-loop.png)
+![Benchmark loop](docs/diagrams/excalidraw-02-benchmark-loop.png)
 
 ## Results
 
@@ -93,7 +93,7 @@ One run per mode. Latency is in seconds.
 | `verified` | **1.00** | 1.00 | 13.38 | 19.71 | 0.00 |
 | `hybrid` | **1.00** | 1.00 | 6.73 | 11.68 | 0.00 |
 
-![Benchmark results](docs/diagrams/excalidraw/excalidraw-04-benchmark-results.png)
+![Benchmark results](docs/diagrams/excalidraw-04-benchmark-results.png)
 
 **What this shows**
 
@@ -138,11 +138,11 @@ docker compose run --rm benchmark
 
 37 automated tests: 31 run anywhere against recorded plant responses, and 6 more run against a live Demo Factory and are skipped otherwise.
 
-![Test coverage](docs/diagrams/excalidraw/excalidraw-08-test-coverage.png)
+![Test coverage](docs/diagrams/excalidraw-08-test-coverage.png)
 
 ## Deployment
 
-![Deployment](docs/diagrams/excalidraw/excalidraw-09-deployment.png)
+![Deployment](docs/diagrams/excalidraw-09-deployment.png)
 
 Docker Compose runs the plant, the MCP server, the Streamlit UI and both benchmarks. For a public demo, `deploy/huggingface/` holds a single-container Hugging Face Space with an access code and a run limit to protect the API quota. Free Spaces sleep when idle.
 
@@ -156,7 +156,7 @@ Docker Compose runs the plant, the MCP server, the Streamlit UI and both benchma
 
 ## Known gaps and next steps
 
-![Gaps and next steps](docs/diagrams/excalidraw/excalidraw-10-gaps-and-next-steps.png)
+![Gaps and next steps](docs/diagrams/excalidraw-10-gaps-and-next-steps.png)
 
 | Today | Next |
 |---|---|
